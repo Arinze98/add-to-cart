@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <main class="w-80 md:w-3/4  m-auto mt-4">
+        <header class="flex justify-between items-center p-4 md:w-3/4 m-auto">
+            <h1 class="text-sm capitalize font-semibold md:text-2xl">loginto <span
+                class="bg-red-400 text-white  rounded-md p-2">arincoin</span>
+            </h1>
+
+            <div class="flex">
+                <div class="relative">
+                    <i id="cart" class="bi bi-cart3 md:text-2xl"></i>
+                    <span id="total_quantity" class="absolute bottom-3 left-4 bg-red-400 text-white w-5  text-center rounded-full">0</span>
+                </div>
+                <p class="mx-5 text-sm">$<span id="total_amount">0</span></p>
+                <button id="clear"><i class="bi bi-trash3 text-center  md:text-2xl"></i></button>
+            </div>
+        </header>
+        
+        <!-- card container -->
+        <div id="container" class=" mx-auto my-20 flex flex-col justify-center items-center md:flex-row md:flex-wrap  gap-3">
+
+            <!-- card -->
+            <div id="card" class="w-membox h-memboxh  bg-slate-300 rounded-xl py-11 relative">
+              <!-- bg image -->
+              <div class="w-full">
+                <div class="w-ronimg h-ronimg rounded-ronrad mx-auto" class="w-comwth1 h-comhig1 py-32 rounded-3xl" style="
+                background: url(./image/pexels-marcelo-dias-2075673.jpg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+              "></div>
+              </div>
+              <!-- plus & minus btn -->
+              <div class="w-28 h-24 mx-auto my-5">
+                <h5 id="price" class="text-base font-bold text-center uppercase my-2">$94</h5>
+                <div class="w-28 text-center my-2">
+                    <i id="dash" class="bi bi-dash-square text-xl cursor-pointer text-red-700"></i>
+                    <input id="quantity" class="w-5 text-center" type="text" value="0">
+                    <i id="plus" class="bi bi-plus-square text-xl cursor-pointer text-green-700"></i>
+                </div>
+              </div>
+              <!-- love icon -->
+               <i class="bi bi-heart text-xl cursor-pointer absolute  bottom-10 left-10  love"></i>
+            </div>
+    
+            <div id="card" class="w-membox h-memboxh  bg-slate-300 rounded-xl py-11 relative">
+              <div class="w-full">
+                <div class="w-ronimg h-ronimg rounded-ronrad mx-auto" class="w-comwth1 h-comhig1 py-32 rounded-3xl" style="
+                background: url(./image/pexels-photo-5418305.jpeg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+              "></div>
+              </div>
+    
+              <div class="w-28 h-24 mx-auto my-5">
+                <h5 id="price" class="text-base font-bold text-center uppercase my-2">$37</h5>
+                <div class="w-28 text-center my-2">
+                    <i id="dash" class="bi bi-dash-square text-xl cursor-pointer text-red-700"></i>
+                    <input id="quantity" class="w-5 text-center" type="text" value="0">
+                    <i id="plus" class="bi bi-plus-square text-xl cursor-pointer text-green-700"></i>
+                </div>
+              </div>
+              <!-- love icon -->
+               <i class="bi bi-heart text-xl cursor-pointer absolute  bottom-10 left-10  love"></i>
+            </div>
+            
+            <div id="card" class="w-membox h-memboxh  bg-slate-300 rounded-xl py-11 relative">
+              <div class="w-full">
+                <div class="w-ronimg h-ronimg rounded-ronrad mx-auto" class="w-comwth1 h-comhig1 py-32 rounded-3xl" style="
+                background: url(./image/pexels-sound-on-3760737.jpg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+              "></div>
+              </div>
+    
+              <div class="w-28 h-24 mx-auto my-5">
+                <h5 id="price" class="text-base font-bold text-center uppercase my-2">$18</h5>
+                <div class="w-28 text-center my-2">
+                    <i id="dash" class="bi bi-dash-square text-xl cursor-pointer text-red-700"></i>
+                    <input id="quantity" class="w-5 text-center" type="text" value="0">
+                    <i id="plus" class="bi bi-plus-square text-xl cursor-pointer text-green-700"></i>
+                </div>
+              </div>
+              <!-- love icon -->
+               <i class="bi bi-heart text-xl cursor-pointer absolute  bottom-10 left-10  love"></i>
+            </div>
+    
+            <div id="card" class="w-membox h-memboxh  bg-slate-300 rounded-xl py-11 relative">
+              <div class="w-full">
+                <div class="w-ronimg h-ronimg rounded-ronrad mx-auto" class="w-comwth1 h-comhig1 py-32 rounded-3xl" style="
+                background: url(./image/pexels-thirdman-8468470.jpg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+              "></div>
+              </div>
+    
+              <div class="w-28 h-24 mx-auto my-5">
+                <h5 id="price" class="text-base font-bold text-center uppercase my-2">$82</h5>
+                <div class="w-28 text-center my-2">
+                    <i id="dash" class="bi bi-dash-square text-xl cursor-pointer text-red-700"></i>
+                    <input id="quantity" class="w-5 text-center" type="text" value="0">
+                    <i id="plus" class="bi bi-plus-square text-xl cursor-pointer text-green-700"></i>
+                </div>
+              </div>
+              <!-- love icon -->
+              <i class="bi bi-heart text-xl cursor-pointer absolute  bottom-10 left-10  love"></i>
+            </div>
+    
+          </div>
+    </main>
+
+
+    <script src="./index.js"></script>
+</body>
+</html>
